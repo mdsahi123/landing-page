@@ -1,0 +1,260 @@
+/*
+   Common CSS
+ */
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: 'Poppins', sans-serif;}
+.wrapper{width: 100%; max-width: 1180px; margin: 0 auto;}
+a{text-decoration: none; transition: all 0.5s ease-out;}
+h1,h2,h3,h4,h5,h6{line-height: 1.3em; font-weight: normal;}
+p{line-height: 1.5em;}
+/* Scroll Bar Hide */
+html{overflow: scroll; overflow-x: hidden;}
+::-webkit-scrollbar{width: 0;}
+::-webkit-scrollbar-thumb{background: #ff0000;}
+/*
+  Header Area CSS
+*/
+ #header_area{padding: 100px 0; background-image : linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.685)),url(../img/header_banner.jpg); height: 100vh; width: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
+ #header_area .header_container{overflow: hidden;}
+ #header_area .header_container .header_content{float: left; width: 500px; position: absolute; top: 50%; transform: translateY(-50%);}
+ #header_area .header_container .header_content h1{font-size: 50px; font-weight: 600; color: #fff;}
+ #header_area .header_container .header_content p{font-size: 15px; font-weight: 400; color: #fff; padding: 20px 0; color: rgb(233, 232, 232);}
+ #header_area .header_container .header_content a{display: inline-block; padding: 11px 20px; color: rgb(233, 232, 232); background: #fb527a; border: 2px solid #fb527a; margin: 10px 0;}
+ #header_area .header_container .header_content a:last-child{margin-left: 20px;}
+ #header_area .header_container .header_content a:hover{background: transparent; border: 2px solid #fff;}
+
+/*
+  Service Area CSS
+*/
+#service_area{padding: 110px 0;}
+#service_area h1{text-align: center; color: #393636; font-size: 36px; font-weight: 500;}
+#service_area .service_container{display: grid; grid-gap: 30px; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); padding: 70px 30px 0;}
+#service_area .service_container .service_item{border: 1px solid #e6e7e6; padding: 50px; text-align: center; cursor: pointer; border-radius: 8px; transition: all 0.5s ease-out;}
+#service_area .service_container .service_item i{font-size: 60px;}
+#service_area .service_container .service_item h4{color: #4a4c4c; padding: 25px 0; font-size: 15px; font-weight: 400;}
+#service_area .service_container .service_item p{color: #4a4c4c; padding-top: 10px; font-size: 13px; font-weight: 400;}
+#service_area .service_container .service_item:hover{background: #fb527a; border: 1px solid #fb527a; color: #fff;}
+#service_area .service_container .service_item:hover h4{color:#fff;}
+#service_area .service_container .service_item:hover p{color:#fff;}
+
+/* 
+  Tutorial Area CSS
+*/
+#tutorial_area{background: #f7f3f7; padding: 100px 0;}
+#tutorial_area h1{text-align: center; color: #393636; font-size: 36px; font-weight: 500;}
+#tutorial_area h2{text-align: center; color: #393636; font-size: 28px; font-weight: 500; margin-top: 10px;}
+#tutorial_area .tutorial_container{background: #f7f3f7; display: grid; grid-gap: 30px; padding: 70px 30px 0; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
+#tutorial_area .tutorial_container .tutorial_item{padding: 50px; border: 1px solid #f9f9f9; text-align: center; box-shadow: 2px 2px 10px rgb(230, 225, 225); background: #fff; transition: all 0.5s ease-out; cursor: pointer;}
+#tutorial_area .tutorial_container .tutorial_item i{font-size: 30px;}
+#tutorial_area .tutorial_container .tutorial_item h4{color: #4a4c4c; padding: 20px 0; font-size: 20px; position: relative; color: #4a4c4c;}
+#tutorial_area .tutorial_container .tutorial_item h4::after{position: absolute; display: block; content: ''; height: 3px; width: 45px; background: #fb527a; left: 50%; transform: translateX(-50%); bottom: 0;}
+#tutorial_area .tutorial_container .tutorial_item p{padding-top: 20px; color: #242725; font-size: 14px; font-weight: normal; line-height: 1.5em;}
+#tutorial_area .tutorial_container .tutorial_item:hover{color: #fff; background: #fb527a;}
+#tutorial_area .tutorial_container .tutorial_item:hover h4{color: #fff;}
+#tutorial_area .tutorial_container .tutorial_item:hover h4::after{background: #fff;}
+#tutorial_area .tutorial_container .tutorial_item:hover p{color: #fff;}
+
+/* 
+  Team Area CSS
+*/
+#team_area{padding: 100px 0;}
+#team_area .team_area_container{display: flex; justify-content: space-between;}
+#team_area .team_area_container .team_item{flex-basis: 44%; padding: 0 1%;}
+#team_area .team_area_container .team_item h2{color: #000000; font-size: 27px;}
+#team_area .team_area_container .team_item h3{color: #000000; font-size: 22px;}
+#team_area .team_area_container .team_item p{color: #000000; font-size: 14px; font-weight: normal; padding: 30px 0;}
+#team_area .team_area_container .team_item ul{margin: 0; padding: 0; list-style: none;}
+#team_area .team_area_container .team_item ul li{display: inline-block; margin: 0 2px; padding-top: 20px;}
+#team_area .team_area_container .team_item ul li a i{display: inline-block; height: 35px; width: 35px; background: #fb527a; text-align: center; padding-top: 10px; color: #fff; border: 1px solid #fb527a; transition: all 0.5s ease-out;}
+#team_area .team_area_container .team_item ul li a i:hover{color: #fb527a; background: #fff;}
+#team_area .team_area_container .team_item .team_img_container{display: flex; justify-content: space-between;}
+#team_area .team_area_container .team_item .team_img_container .team_img{margin: 0 10px; flex-basis: 50%;}
+
+/* 
+  Banner Area CSS
+*/
+#banner_area{  background-image : linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.795)),url(../img/banner.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 50vh; background-attachment: fixed; position: relative;}
+#banner_area .banner_container{margin: 0 auto; text-align: center; width: 630px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#banner_area .banner_container i{font-size: 60px; color: #efefef; padding: 30px 0;}
+#banner_area .banner_container p{color: #efefef; font-size: 15px; padding-top: 15px;}
+#banner_area .banner_container h2{color: #efefef; font-size: 20px; padding-top: 10px;}
+#banner_area .banner_container h3{ font-size: 20px; color: #fb527a;}
+
+/* 
+  Features Area CSS
+*/
+#features_area{padding: 100px 0;}
+#features_area .features_header_text_box h1{text-align: center;  font-size: 36px; font-weight: 500;}
+#features_area .features_header_text_box p{text-align: center; font-size: 15px; padding: 10px 0;}
+#features_area .features_container{padding-top: 80px; display: flex; justify-content: space-between;}
+#features_area .features_container .left_features_item{flex-basis: 42%; padding: 1%; margin: 0 1%;}
+#features_area .features_container .right_features_item{flex-basis: 52%; padding: 1%; margin: 0 1%;}
+#features_area .features_container .features_item .inner_features_item{display: flex; justify-content: space-between; margin: 10px 0;}
+#features_area .features_container .features_item .inner_features_item .icon_container{background:  #fff; text-align: center; border-radius: 50%; cursor: pointer; margin: 0 15px; margin: 10px 0;}
+#features_area .features_container .features_item .inner_features_item .icon_container i{ padding-top: 10px; font-size: 28px; width: 65px; height: 65px; border-radius: 50%; border: 1px solid #242725; padding-top: 16px; transition: all 0.5s ease-out;}
+#features_area .features_container .features_item .inner_features_item .icon_container i:hover{background: #fb527a; border: 1px solid #fb527a; color: #fff;}
+#features_area .features_container .features_item .inner_features_item .text_container {padding: 0 20px; margin: 10px 0;}
+#features_area .features_container .features_item .inner_features_item .text_container h2{color: #fb527a; font-size: 20px; font-weight: 500;}
+#features_area .features_container .features_item .inner_features_item .text_container p{color: #101010; font-size: 14px; padding: 5px 0; font-weight: normal;}
+
+/* 
+  Navigation one Area CSS
+*/
+#nav_bar_area01{background: #f7f7f7; padding-bottom: 130px;}
+.nav_bar_container{padding: 65px ;}
+.nav_bar_container ul{margin: 0; padding: 0; list-style: none; text-align: center;}
+.nav_bar_container ul li{display: inline-block; margin: 0 25px;position: relative;}
+.nav_bar_container ul li a{ color: #4f4f4f;}
+.nav_bar_container ul li::after{position: absolute; content: ''; width: 0; background: #fb527a; height: 3px; display: block; bottom: -8px;}
+.nav_bar_container ul li a:hover{color: #000000; transition: all 0.5s ease-out;}
+.main_nav_wrapper{background: #fff;}
+.nav_bar_container ul li:hover::after{width: 100%; transition: all 0.4s ease-out;}
+.main_nav_container{display: flex; justify-content: space-between;}
+.main_nav_container .main_nav_item{padding: 40px 30px;}
+.main_nav_container .right_main_nav_item{padding: 70px 20px;}
+.main_nav_container .right_main_nav_item h1{color: #4f4f4f; font-size: 57px; font-weight: normal;}
+.main_nav_container .right_main_nav_item h2{color: #4f4f4f; font-size: 32px; font-weight: normal;}
+.main_nav_container .right_main_nav_item p{color: #4f4f4f; font-size: 14px; font-weight: normal; padding: 30px 0;}
+.main_nav_container .right_main_nav_item a{color: #fff; background: #fb527a; display: inline-block; padding: 18px 50px; border: 1px solid #fb527a;border-radius: 30px;}
+.main_nav_container .right_main_nav_item a:hover{color: #fb527a; background: transparent;}
+
+/* 
+  Product Area CSS
+*/
+#product_area{padding: 130px 0;}
+.nav_bar_container_02 ul{margin: 0; padding: 0; list-style: none; width: 600px; margin: 0 auto; border-radius: 30px; text-align: center; box-shadow: 6px 6px 10px 2px #efeeef; padding: 8px 0;}
+.nav_bar_container_02 ul li{ display: inline-block; margin: 12px;}
+.nav_bar_container_02 ul li a{display: inline-block; padding: 9px 15px; border-radius: 30px; color: #314a5d;}
+.nav_bar_container_02 ul li a:hover{ background: #fb527a; color: #fff;}
+.product_container{display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); padding: 70px 10px 0;}
+.product_container .product_item img{width: 100%; object-fit: cover; height: 100%; cursor: pointer; transition: 0.5s;}
+.product_container .product_item img:hover{opacity: 0.6;}
+
+/* 
+  Testimonial Area CSS
+*/
+#testimonial_area{background: linear-gradient(to right, #ff5d7b, #ff9673, #ffc373, #ff9673, #ff5d7b); height: 60vh; width: 100%;}
+.inner_testimonial_area{display: flex; justify-content: space-between; top: 50%; position: relative; transform: translateY(-50%);}
+.inner_testimonial_area .testimonial_item{background: #fff; margin: 0 1%; position: relative; padding: 70px; box-shadow: 4px 2px 12px #252525; border-radius: 10px;}
+.inner_testimonial_area .testimonial_item img{width: 100px; height: 100px; border-radius: 50%; position: absolute; top: -50px; left: 50%; transform: translateX(-50%);}
+.inner_testimonial_area .testimonial_item p{color: #314a5d; font-size: 14px; font-weight: normal; text-align: center;}
+.inner_testimonial_area .testimonial_item h3{color: #314a5d; font-size: 16px; text-align: center; position: relative; padding: 10px 0;}
+.inner_testimonial_area .testimonial_item h3::after{position: absolute; content: ''; background: #e1dfe1; height: 3px; width: 35px; display: block; left: 50%; transform: translateX(-50%); bottom: -3px;}
+.inner_testimonial_area .testimonial_item h4{color: #314a5d; text-align: center; font-weight: normal; font-size: 14px; padding: 10px 0;}
+.inner_testimonial_area .testimonial_item .testimonial_rate{text-align: center; padding: 10px 0;}
+
+/* 
+  Pricing Area CSS
+*/
+#pricing_area{padding: 150px 0;}
+#pricing_area .pricing_container{display: grid; grid-column-gap: 30px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));}
+#pricing_area .pricing_container .pricing_item{padding: 50px; box-shadow: 2px 2px 4px 2px #e4e3e3; cursor: pointer; border-radius: 5px; transition: all 0.5s ease-in-out;}
+#pricing_area .pricing_container .pricing_item h4{text-align: center; color: #314a5d; font-size: 17px; font-weight: normal;}
+#pricing_area .pricing_container .pricing_item p{padding: 30px 0; text-align: center; color: #314a5d; font-weight: normal; font-size: 18px;}
+#pricing_area .pricing_container .pricing_item p{padding: 30px 0; text-align: center; color: #314a5d; font-weight: normal; font-size: 18px;}
+#pricing_area .pricing_container .pricing_item span{font-size: 42px; font-weight: normal; color: #fb527a;}
+#pricing_area .pricing_container .pricing_item ul{margin: 0; padding: 0; list-style: none; text-align: center;}
+#pricing_area .pricing_container .pricing_item ul li{display: block; margin: 8px 0;}
+#pricing_area .pricing_container .pricing_item ul li a{color: #979697; font-size: 14px; font-weight: normal;}
+#pricing_area .pricing_container .pricing_item .pricing_btn{text-align: center;}
+#pricing_area .pricing_container .pricing_item .pricing_btn a{display: inline-block; padding: 9px 25px; border-radius: 35px; background: #fb527a; border: 1px solid #fb527a; margin: 20px 0 0px; color: #fff;}
+#pricing_area .pricing_container .pricing_item:hover{color: #fff; background: #fb527a;}
+#pricing_area .pricing_container .pricing_item:hover h4{color: #fff;}
+#pricing_area .pricing_container .pricing_item:hover span{color: #fff;}
+#pricing_area .pricing_container .pricing_item:hover p{color: #fff;}
+#pricing_area .pricing_container .pricing_item:hover a{color: #fff;}
+#pricing_area .pricing_container .pricing_item:hover .pricing_btn a{color: #fb527a; border: 1px solid #fff; background: #fff;}
+
+/* 
+  Banner_02 Area CSS
+*/
+#banner_02_area{background-image : linear-gradient(rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.733)),url(../img/banner02.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 50vh; background-attachment: fixed; position: relative;}
+#banner_02_area .banner_container{display: grid; grid-column-gap: 30px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); position: relative; top: 50%; transform: translateY(-50%);}
+#banner_02_area .banner_container .banner_02_item{padding: 50px; text-align: center;}
+#banner_02_area .banner_container .banner_02_item i{font-size: 40px; color: #fff;}
+#banner_02_area .banner_container .banner_02_item p{padding: 15px 0; font-size: 53px; color: #fff;}
+#banner_02_area .banner_container .banner_02_item h4{color: #fff; font-size: 18px;}
+
+/* 
+  Client Slider Area CSS
+*/
+#clients_area{padding-top: 70px;}
+#clients_area h1{color: #181818; font-size: 36px; text-align: center;}
+#clients_area p{color: #181818; font-size: 16px; text-align: center; padding-top: 15px;}
+.client_slider_area{padding: 30px 0 70px;}
+.slider_item{width: 140px; height: 140px;}
+.slider_item img{width: 100%; height: 100%;}
+.slider_container{padding: 30px 0;}
+.slick-dots li button::before {font-size: 15px;}
+.slick-dots li.slick-active button::before {color: red;}
+
+/* 
+  Client Profile Area CSS
+*/
+#client_profile_area{background: #f7f3f7;}
+#client_profile_area .client_slider_container{display: grid; grid-gap: 30px; grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); padding: 70px 0 50px;}
+#client_profile_area .client_slider_container .client_profile_item{padding: 15px;}
+#client_profile_area .client_slider_container .client_profile_item .top_profile_area{padding: 10px 0;}
+#client_profile_area .client_slider_container .client_profile_item .top_profile_area p{display: inline-block; font-size: 13px; color: #96989d; margin: 0 5px;}
+#client_profile_area .client_slider_container .client_profile_item .top_profile_area p i{color: #101010; margin: 0 5px;}
+#client_profile_area .client_slider_container .client_profile_item .image_area{position: relative; width: 360px; height: 300px;}
+#client_profile_area .client_slider_container .client_profile_item .image_area img{width: 100%; height: 100%;}
+#client_profile_area .client_slider_container .client_profile_item .image_area .small_img_area{position: absolute; width: 60px; height: 60px; right: 0; bottom: -25px; right: 10px;}
+#client_profile_area .client_slider_container .client_profile_item .image_area .small_img_area img{width: 100%; height: 100%; border-radius: 50%; border: 4px solid #fff;}
+#client_profile_area .client_slider_container .client_profile_item .client_description h4{padding-top: 40px; position: relative; font-size: 15px; font-weight: normal; color: #fb527a;}
+#client_profile_area .client_slider_container .client_profile_item .client_description h4::after{content: ''; width: 35px;position: absolute; display: block; height: 3px; background: #101010; bottom: -8px;}
+#client_profile_area .client_slider_container .client_profile_item .client_description p{font-size: 14px; padding: 15px 0;color: #5a5d5a;}
+
+/* 
+  Get in Touch Area CSS
+*/
+#get_in_touch_area{background-image : linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.692)),url(../img/banner_03.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 50vh; background-attachment: fixed; position: relative;}
+#get_in_touch_area h1{position: absolute; color: #fff; font-size: 36px; left: 50%; top: 40%; transform: translate(-50%, -50%);}
+
+/* 
+  Contact Area CSS
+*/
+#contact_area{margin-top: -120px;}
+.contact_container{display: flex; justify-content: space-between;}
+.contact_container .contact_item{background: #fff; padding: 50px 30px 30px; margin: 0 15px; position: relative; box-shadow: -2px 2px 3px 2px #efeeef;}
+.contact_container .contact_item:last-child{background: #fb527a; box-shadow: none;}
+/* left contact Area */
+.contact_container .left_contact_item h1{color: #404140; font-weight: normal; font-size: 28px; color: #fb527a;}
+.contact_container .left_contact_item p{color: #404140; font-weight: normal; font-size: 16px; padding: 15px 0 40px;}
+.contact_container .left_contact_item form{overflow: hidden;}
+.contact_container .left_contact_item form input{float: left; width: 48%; margin: 2% 1%; padding: 2%; outline: none; border: 2px solid #d8d7d7; color: #6b6a6a; border-radius: 10px; font-size: 14px;}
+.contact_container .left_contact_item form input[type='submit']{width: 130px; color: #fff; border: 1px solid #fb527a; background: #fb527a; cursor: pointer; transition: all 0.5s ease-in-out;}
+.contact_container .left_contact_item form input[type='submit']:hover{color: #fb527a; background: transparent;}
+.contact_container .left_contact_item form textarea{width: 98%; padding: 3%; margin: 3% 1%; min-height: 250px; resize: none; border-radius: 20px; outline: none; border: 2px solid #d8d7d7; font-family: 'Poppins', sans-serif; color: #6b6a6a; font-size: 14px;}
+
+/* Right contact Area */
+.contact_container .right_contact_item h1{color: #fff; font-weight: normal; font-size: 28px; }
+.contact_container .right_contact_item p{color: #fff; font-weight: normal; font-size: 16px; padding: 15px 0 40px;}
+.inner_contact_container{overflow: hidden;}
+.inner_contact_item{overflow: hidden;}
+.inner_contact_item .contact_icon_area{float: left; padding-top: 15px;}
+.inner_contact_item .contact_icon_area i{font-size: 26px; color: #fff;}
+.inner_contact_item .contact_text_area{float: left; width: 90%; padding: 0 20px;}
+.inner_contact_item .contact_text_area h5{color: #fff; padding: 12px 0; font-size: 20px;}
+.inner_contact_item .contact_text_area p{padding: 2px 0; font-size: 14px;}
+.contact_container ul{margin: 0; padding: 0; list-style: none;}
+.contact_container ul li{display: inline-block; margin: 16px 4px;}
+.contact_container ul li a i{width: 36px; height: 36px; border-radius: 50%; text-align: center; background: #fff; padding-top: 9px; color: #fb527a;}
+
+
+   /* Map Area CSS */
+
+#map_area{padding-top: 100px; width: 100%; height: 70vh;}
+#map_area iframe{width: 100%; height: 100%; border: none;}
+/*
+   Map Area CSS
+ */
+#footer_area{width: 100%; height: 230px; background: #212021; margin-top: 0px;}
+#footer_area .footer_content{width: 500px; margin: 0 auto; top: 50%; position: relative; transform: translateY(-50%);}
+#footer_area .footer_content h1{font-size: 28px; color: #fff; text-align: center; }
+#footer_area .footer_content p{text-align: center; color: #c7c5c5;margin-top: 20px; padding: 10px 0; font-size: 13px; font-weight: normal;}
+#footer_area .footer_content ul{margin: 0; padding: 0; list-style: none; text-align: center; margin-top: 20px;}
+#footer_area .footer_content ul li{display: inline-block; margin: 0 5px;}
+#footer_area .footer_content ul li a i {width: 41px;height: 40px;text-align: center;background: transparent;border: 1px solid #fff;padding-top: 12px;border-radius: 50%;color: #fff;font-size: 14px; transition: all 0.3s ease-in-out;}
+#footer_area .footer_content ul li a i:hover{color: #fb527a; border: 1px solid #fb527a;}
